@@ -1,0 +1,34 @@
+# First line is the header fields for columns and is mandatory.
+# Regular expressions are supported in all fields except the first.
+# Last field supports variable length command completion.
+# abc[[xyz]] is expanded to abc(x(y(z)?)?)?, regexp inside [[]] is not supported
+#
+# Rules of Ordering:
+#  - OS in alphabetical order
+#  - Template name in length order (longest to shortest)
+#  - When Length is the same, use alphabetical order
+#  - Keep space between OS's
+#
+Template, Hostname, Platform, Command
+
+linux_arp_-a.textfsm, .*, linux, arp -a
+
+linux_ipneigh.tfsm, .*, loxilight, ip neigh show
+eos_show_bgp_nbr.tfsm, .*, loxilight, show ip bgp neighbors vrf all
+linux_showsys.tfsm, .*, loxilight, cat /proc/uptime; hostnamectl
+fs.tfsm, .*, loxilight, df -hT
+ifCounters.tfsm, .*, loxilight, cat /proc/net/dev
+linux_ipaddr.tfsm, .*, loxilight, ip -d address show
+iosxe_show_lldp_neigh.tfsm, .*, loxilight, show lldp neighbors detail
+linux_fdb.tfsm, .*, loxilight, /sbin/bridge fdb show
+sonic_mclag_dump_state.tfsm, .*, loxilight, show mlag detail
+frr_ospfif.tfsm, .*, loxilight, sudo vtysh -c 'show ip ospf vrf all interface'
+frr_ospfnbr.tfsm, .*, loxilight, sudo vtysh -c 'show ip ospf vrf all neighbor detail'
+frr_ospfnbr_brief.tfsm, .*, loxilight, sudo vtysh -c 'show ip ospf vrf all neighbor'
+linux_routes.tfsm, .*, loxilight, ip route show table all
+timedatectl.tfsm, .*, loxilight, timedatectl
+linux_top.tfsm, .*, loxilight, top -bn 1 | head -17
+linux_top.tfsm, .*, loxilight, top -bn 1 -o '%MEM' | head -17
+linux_vlan.tfsm, .*, loxilight, /sbin/bridge -c vlan show
+
+
