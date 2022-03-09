@@ -1,0 +1,29 @@
+---
+parsed_sample:
+  - ifindex: "1"
+    macaddr: "00:00:00:00:00:00"
+    ifname: "lo"
+    _flags: "LOOPBACK,UP,LOWER_UP"
+    mtu: "65536"
+    master: ""
+    state: "UNKNOWN"
+    ipaddresslist: []
+    ip6addresslist: []
+    description: ""
+    vni: ""
+    vlan: ""
+    type: "loopback"
+  - ifindex: "2"
+    macaddr: ""
+    ifname: "tunl0"
+    _flags: "NOARP"
+    mtu: "1480"
+    master: ""
+    state: "DOWN"
+    ipaddresslist: []
+    ip6addresslist: []
+    description: ""
+    vni: ""
+    vlan: ""
+    type: ""
+  
