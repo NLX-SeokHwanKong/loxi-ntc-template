@@ -7,9 +7,15 @@ import textfsm
 #|-----------|------|--------|------------|
 #| hsvlan110 |  110 | UP     | eth0, eth1 |
 #'''
+#traceroute = '''
+#|   NAME    | VLAN | STATUS |    PORTS   |
+#|-----------|------|--------|------------|
+#| hsvlan110 |  110 | UP     | eth0, eth1 |
+#| hsvlan120 |  120 | UP     | eth0, eth1 |
+#'''
+
 traceroute = '''
 |   NAME    | VLAN | STATUS |    PORTS   |
-|-----------|------|--------|------------|
 | hsvlan110 |  110 | UP     | eth0, eth1 |
 | hsvlan120 |  120 | UP     | eth0, eth1 |
 '''
