@@ -15,6 +15,7 @@ linux_show_interface_counter.textfsm, .*, linux, sh[[ow]] interface counter
 linux_show_ip_neighbor.textfsm, .*, linux, sh[[ow]] ip neighbor
 linux_show_ip_route.textfsm, .*, linux, sh[[ow]] ip route
 linux_show_ip_addr.textfsm, .*, linux, sh[[ow]] ip addr
+linux_show_time.textfsm, .*, linux, sh[[ow]] time
 linux_show_vlan.textfsm, .*, linux, sh[[ow]] vlan
 linux_show_fdb.textfsm, .*, linux, sh[[ow]] fdb
 linux_show_sys.textfsm, .*, linux, sh[[ow]] sys
