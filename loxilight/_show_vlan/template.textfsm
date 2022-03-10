@@ -1,5 +1,5 @@
 Value vlanName (\w+)
-Value vlan (\S)
+Value vlan (\S+)
 Value pvid (\w+)
 Value state (\w+)
 
