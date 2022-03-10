@@ -1,4 +1,4 @@
 Value Interface (\S+)
 
 Start
-  ^\s+Interface ${Interface} is up
+  ^|+\s+Interface ${Interface} is up
