@@ -5,4 +5,4 @@ Value state (\w+)
 Value remote (\w+)
 
 Start  
-  ^[|]\s+(\w+)\s+[|]\s+${remote}\s+[|]\s+${macaddr}\s+[|]\s+(\w+)\s+[|]\s+${oif}\s+[|]\s+(\w+)\s+[|]\s+(\w+).*$$ -> Record  
+  ^[|]\s+(\w+)\s+[|]\s+${ipAddress}\s+[|]\s+${macaddr}\s+[|]\s+(\w+)\s+[|]\s+${oif}\s+[|]\s+${state}\s+[|]\s+{remote}.*$$ -> Record  
