@@ -56,7 +56,7 @@ def correct_number_of_entries_test(processed, reference):
     This will create a test for each of the files in the test_collection
     variable.
     """
-    assert (len(processed) == len(reference)), "Processed: " + processed
+    assert (len(processed) == len(reference)), "Processed: " + " ".join(map(str, processed))
 
 
 def all_entries_have_the_same_keys_test(processed, reference):
