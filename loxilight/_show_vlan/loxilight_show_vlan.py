@@ -2,9 +2,12 @@ import textfsm
 
 # cat /proc/uptime; hostnamectl
 
+#traceroute = '''
+#|   NAME    | VLAN | STATUS |    PORTS   |
+#|-----------|------|--------|------------|
+#| hsvlan110 |  110 | UP     | eth0, eth1 |
+#'''
 traceroute = '''
-|   NAME    | VLAN | STATUS |    PORTS   |
-|-----------|------|--------|------------|
 | hsvlan110 |  110 | UP     | eth0, eth1 |
 '''
 
