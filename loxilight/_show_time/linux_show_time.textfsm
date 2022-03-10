@@ -7,5 +7,5 @@ Start
   ^\s*Universal time:.*$$
   ^\s*RTC time:.*$$
   ^\s*Time zone: ${timezone}.*$$
-  ^\s*NTP enabled: ${ntpEnabled}.*$$
-  ^\s*NTP synchronized: ${ntpSync}.*$$ -> Record
+  ^\s*NTP service: ${ntpEnabled}.*$$
+  ^\s*clock synchronized: ${ntpSync}.*$$ -> Record
