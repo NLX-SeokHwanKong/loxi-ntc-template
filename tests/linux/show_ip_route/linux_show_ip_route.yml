@@ -13,7 +13,7 @@ parsed_sample:
     prefix: "172.17.0.0/16"
     vrf: ""
     source: "172.17.0.2"
-    nexthopips: ["172.17.0.0"]
+    nexthopips: []
     oifs: ["eth0"]
     weights: []
     metric: ""
