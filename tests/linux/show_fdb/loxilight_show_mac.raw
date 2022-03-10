@@ -1,0 +1,16 @@
+> show mac all
+FDB Table
+| MAC | VLAN | VRF | INTERFACE | STATUS |
+|-----|------|-----|-----------|--------|
+VxLAN FDB Table
+| MAC | VXLAN | VRF | DESTINAION IP | VETP ID | STATUS |
+|-----|-------|-----|---------------|---------|--------|
+
+
+=======================================================================
+parsed_sample:
+  - macaddr: "33:33:00:00:00:01"    ==> MAC
+    oif: "eth0"                     ==> INTERFACE
+    vlan: ""                        ==> VLAN
+    flags: "permanent"              ==> STATUS
+    remotevtepip: ""                ==> DESTINAION IP

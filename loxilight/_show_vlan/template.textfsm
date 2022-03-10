@@ -1,0 +1,8 @@
+Value vlanName ([\w]+)
+Value List vlan ([\w]+)
+Value pvid ([\w]+)
+
+Start
+  ^\S+ -> Continue.Record
+  ^\s*${vlanName}|${pvid}|${vlan}.*$$
+  ^.*$$ -> Continue
