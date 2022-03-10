@@ -1,0 +1,5 @@
+> show ip neighbor all
+| VRF | NEXT HOP | SOURCE MAC | DESTINAION MAC | INTERFACE | IS INSTALL | HW INSTALL |
+|-----|----------|------------|----------------|-----------|------------|------------|
+| 1   | 128.0.0.1| aa:bb:cc   | dd:ee:ff       | eth1      |            |            |
+| 2   | 228.0.0.1| aa:bb:cc   | dd:ee:ff       | eth2      |            |            |
