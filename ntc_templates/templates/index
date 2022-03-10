@@ -19,5 +19,5 @@ linux_show_vlan.textfsm, .*, linux, sh[[ow]] vlan
 linux_show_fdb.textfsm, .*, linux, sh[[ow]] fdb
 linux_show_sys.textfsm, .*, linux, sh[[ow]] sys
 linux_show_top.textfsm, .*, linux, sh[[ow]] top
-linux_show_fs.textfsm, .*, linux, sh[[ow]] fs
 linux_arp_-a.textfsm, .*, linux, arp -a
+linux_show_fs.textfsm, .*, linux, sh[[ow]] fs
