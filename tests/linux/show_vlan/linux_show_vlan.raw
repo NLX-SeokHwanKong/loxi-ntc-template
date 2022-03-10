@@ -1,1 +1,4 @@
-port	vlan ids
+port    vlan ids
+eth0.100         1 PVID Egress Untagged
+
+vlan100  1 PVID Egress Untagged

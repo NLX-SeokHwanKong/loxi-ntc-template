@@ -1,3 +1,18 @@
+Value vlanName (\S+)
+Value List vlan (\d+)
+Value pvid (\d+)
+
+Start
+  ^\S+ -> Continue.Record
+  ^${vlanName}\s+${vlan}.*$$ -> Continue
+  ^${vlanName}\s+${pvid}\s+PVID.*$$
+  ^\s+${vlan}.*$$
 ---
-parsed_sample:  
+parsed_sample:
+  - vlanName: "eth0.100"
+    vlan: ["1"]
+    pvid: "1"
+  - vlanName: "vlan100"
+    vlan: ["1"]
+    pvid: "1"
   
