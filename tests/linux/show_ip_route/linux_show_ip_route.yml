@@ -18,12 +18,3 @@ parsed_sample:
     weights: []
     metric: ""
     action: ""
-  - protocol: "kernel"
-    prefix: "broadcast"
-    vrf: ""
-    source: "127.0.0.1"
-    nexthopips: []
-    oifs: ["lo"]
-    weights: []
-    metric: ""
-    action: ""
