@@ -10,7 +10,7 @@ System clock synchronized: no
           RTC in local TZ: no
 '''
 
-with open('linux_show_time.template') as template:
+with open('linux_show_time.textfsm') as template:
     fsm = textfsm.TextFSM(template)
     result = fsm.ParseText(traceroute)
 
