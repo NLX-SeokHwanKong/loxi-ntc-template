@@ -4,5 +4,8 @@ Value pvid (\w+)
 Value state (\w+)
 
 Start
-  ^[|]\s+NAME\s+[|]\s+VLAN\s+[|]\s+STATUS\s+[|]\s+PORTS\s*$$ -> Continue
+  ^[|]\s+NAME\s+[|]\s+VLAN\s+[|]\s+STATUS\s+[|]\s+PORTS\s*$$ -> VLAN
+  ^. -> Error
+
+VLAN
   ^[|]\s+${vlanName}\s+[|]\s+${pvid}\s+[|]\s+${state}\s+[|]\s+${vlan}.*$$ -> Record
