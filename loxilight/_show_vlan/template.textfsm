@@ -5,4 +5,5 @@ Value state (\w+)
 
 Start
   ^[|]\s+NAME\s+[|]\s+VLAN\s+[|]\s+STATUS\s+[|]\s+PORTS.*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
   ^[|]\s+${vlanName}\s+[|]\s+${pvid}\s+[|]\s+${state}\s+[|]\s+${vlan}.*$$ -> Record
