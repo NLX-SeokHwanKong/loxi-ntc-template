@@ -1,6 +1,7 @@
 Value vlanName ([\w]+)
 Value vlan ([\w]+)
 Value pvid ([\w]+)
+Value state ([\w]+)
 
 Start
-  ^\s*${vlanName}|${pvid}|${vlan}.*$$ -> Record
+  ^\s*${vlanName}|${pvid}|${state}|${vlan}.*$$ -> Record
