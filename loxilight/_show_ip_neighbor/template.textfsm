@@ -4,7 +4,5 @@ Value oif (\S+)
 Value state (\w+)
 Value remote (\w+)
 
-Start
-  ^[|]\s+VRF\s+[|]\s+NEXT HOP\s+[|]\s+SOURCE MAC\s+[|]\s+DESTINAION MAC\s+[|]\s+INTERFACE\s+[|]\s+IS INSTALL\s+[|]\s+HW INSTALL.*$$ -> Next.NoRecord
-  ^[|]----.*$$ -> Next.NoRecord
+Start  
   ^[|]\s+(\w+)\s+[|]\s+${remote}\s+[|]\s+${macaddr}\s+[|]\s+(\w+)\s+[|]\s+${oif}\s+[|]\s+(\w+)\s+[|]\s+(\w+).*$$ -> Record  
