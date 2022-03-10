@@ -3,7 +3,7 @@ parsed_sample:
   - vlanname: "eth0.100"
     vlan: ["1"]
     pvid: "1"
-  - vlanname: "vlan200"
+  - vlanname: "vlan100"
     vlan: ["1"]
     pvid: "1"
   
