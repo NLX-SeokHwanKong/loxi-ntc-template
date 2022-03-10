@@ -11,7 +11,7 @@ import textfsm
 #| hsvlan110 |  110 | UP     | eth0, eth1 |
 #'''
 traceroute = '''
-Interface GigabitEthernet1/10 is up.
+| Interface GigabitEthernet1/10 is up.
 '''
 
 
