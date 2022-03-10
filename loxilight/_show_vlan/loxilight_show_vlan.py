@@ -7,12 +7,10 @@ import textfsm
 #|-----------|------|--------|------------|
 #| hsvlan110 |  110 | UP     | eth0, eth1 |
 #'''
-#traceroute = '''
-#| hsvlan110 |  110 | UP     | eth0, eth1 |
-#'''
 traceroute = '''
-| Interface GigabitEthernet1/10 is up.
+| hsvlan110 |  110 | UP     | eth0, eth1 |
 '''
+
 
 
 with open('template.textfsm') as template:

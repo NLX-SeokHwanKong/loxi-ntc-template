@@ -1,4 +1,7 @@
-Value Interface (\S+)
+Value vlanName ([\w]+)
+Value vlan ([\w]+)
+Value pvid ([\w]+)
+Value state ([\w]+)
 
 Start
-  ^[|]\s+Interface ${Interface} is up
+  ^[|]\s+${vlanName}|${pvid}|${state}|${vlan}.*$$ -> Record
