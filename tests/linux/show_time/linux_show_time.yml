@@ -1,6 +1,6 @@
 ---
 parsed_sample:
   - timezone: "Etc/UTC (UTC, +0000)"
-    ntpEnabled: "no"
-    ntpSync: "no"
+    ntpenabled: "no"
+    ntpsync: "no"
       
