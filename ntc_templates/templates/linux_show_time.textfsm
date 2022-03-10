@@ -9,5 +9,4 @@ Start
   ^\s*Time zone: ${timezone}.*$$
   ^\s*System clock synchronized: ${ntpSync}.*$$ 
   ^\s*NTP service: ${ntpEnabled}.*$$
-  ^\s*RTC in local TZ:.*$$ -> Record
-  
+  ^\s*RTC in local TZ:.*$$ -> Record 
