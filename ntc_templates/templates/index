@@ -11,6 +11,12 @@
 #
 Template, Hostname, Platform, Command
 
+linux_show_interface_counter.textfsm, .*, linux, sh[[ow]] interface counter
+linux_show_ip_neighbor.textfsm, .*, linux, sh[[ow]] ip neighbor
+linux_show_ip_route.textfsm, .*, linux, sh[[ow]] ip route
 linux_show_ip_addr.textfsm, .*, linux, sh[[ow]] ip addr
+linux_show_vlan.textfsm, .*, linux, sh[[ow]] vlan
 linux_show_fdb.textfsm, .*, linux, sh[[ow]] fdb
+linux_show_sys.textfsm, .*, linux, sh[[ow]] sys
+linux_show_top.textfsm, .*, linux, sh[[ow]] top
 linux_arp_-a.textfsm, .*, linux, arp -a

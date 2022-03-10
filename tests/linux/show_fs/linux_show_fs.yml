@@ -1,0 +1,16 @@
+---
+parsed_sample:
+  - device: "udev"
+    fstype: "devtmpfs"
+    totalsize: "7.7G"
+    usedsize: "0"
+    availsize: "7.7G"
+    usedpercent: "0%"
+    mountpoint: "/dev"
+  - device: "/dev/nvme0n1p5"
+    fstype: "ext4"
+    totalsize: "39G"
+    usedsize: "15G"
+    availsize: "23G"
+    usedpercent: "40%"
+    mountpoint: "/"

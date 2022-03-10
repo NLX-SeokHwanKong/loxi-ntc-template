@@ -1,0 +1,29 @@
+---
+parsed_sample:
+  - protocol: ""
+    prefix: "default"
+    vrf: ""
+    source: ""
+    nexthopips: ["172.17.0.1"]
+    oifs: ["eth0"]
+    weights: []
+    metric: ""
+    action: ""
+  - protocol: "kernel"
+    prefix: ""
+    vrf: ""
+    source: "172.17.0.2"
+    nexthopips: ["172.17.0.0"]
+    oifs: ["eth0"]
+    weights: []
+    metric: ""
+    action: ""
+  - protocol: "kernel"
+    prefix: "broadcast"
+    vrf: ""
+    source: "127.0.0.1"
+    nexthopips: []
+    oifs: ["lo"]
+    weights: []
+    metric: ""
+    action: ""

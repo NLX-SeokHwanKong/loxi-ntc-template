@@ -1,0 +1,8 @@
+---
+parsed_sample:
+  - ipaddress: "172.17.0.1"
+    macaddr: "02:42:b4:fc:af:a9"
+    oif: "eth0"
+    state: "REACHABLE"
+    remote: ""
+      
