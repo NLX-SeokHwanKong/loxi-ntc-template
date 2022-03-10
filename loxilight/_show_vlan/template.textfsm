@@ -4,4 +4,4 @@ Value pvid ([\w]+)
 Value state ([\w]+)
 
 Start
-  ^[|]\s${vlanName}[|]\s${pvid}[|]\s${state}[|]\s${vlan}.*$$ -> Record
+  ^[|]\s${vlanName}|${pvid}|${state}|${vlan}.*$$ -> Record
