@@ -1,6 +1,6 @@
 Value timezone (\S+)
-Value ntpEnabled (yes|no)
-Value ntpSync (yes|no)
+Value ntpEnabled (\S+)
+Value ntpSync (\S+)
 
 Start
   ^\s*Local time:.*$$
