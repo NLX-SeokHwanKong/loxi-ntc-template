@@ -11,5 +11,5 @@ Value action (blackhole)
 Start  
   ^[|]\s+HOST-IP.*$$ -> Next.NoRecord
   ^[|]----.*$$ -> Next.NoRecord
-  ^[|]\s+${prefix}\s+[|]\s+(\S+)\s+[|]\s+${vrf}\s+[|]\s+${nexthopIps}\s+[|]\s+(\S+).*$$ -> Record 
+  ^[|]\s+${prefix}\s+[|]\s+(\S+)\s+[|]\s+${vrf}\s+[|]\s+${nexthopIps}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${oifs}.*$$ -> Record 
  
