@@ -1,4 +1,4 @@
-Value aaa (\w+)
+Value aaa (\d+)
 Value bbb (\w+)
 Value ipAddress (\w+)
 Value macaddr (\w+)
