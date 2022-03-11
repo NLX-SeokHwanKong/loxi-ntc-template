@@ -22,7 +22,7 @@ linux_show_top.textfsm, .*, linux, sh[[ow]] top
 linux_arp_-a.textfsm, .*, linux, arp -a
 linux_show_fs.textfsm, .*, linux, sh[[ow]] fs
 
-loxilight_show_ip_neighbor, .*, loxilight, sh[[ow]] ip neighbor
-loxilight_show_ip_route, .*, loxilight, sh[[ow]] ip route
-loxilight_show_vlan, .*, loxilight, sh[[ow]] vlan
-loxilight_show_fdb, .*, loxilight, sh[[ow]] fdb
+loxilight_show_ip_neighbor.textfsm, .*, loxilight, sh[[ow]] ip neighbor
+loxilight_show_ip_route.textfsm, .*, loxilight, sh[[ow]] ip route
+loxilight_show_vlan.textfsm, .*, loxilight, sh[[ow]] vlan
+loxilight_show_fdb.textfsm, .*, loxilight, sh[[ow]] fdb
