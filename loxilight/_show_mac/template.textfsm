@@ -1,0 +1,12 @@
+Value macaddr ([0-9a-f:]+)
+Value oif (\S+)
+Value vlan (\d+)
+Value flags ([A-Za-z ]*)
+Value remoteVtepIp ([0-9.]+)
+
+Start
+  ^FDB Table.*$$ -> Next.NoRecord  
+  ^[|]\s+MAC.*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
+  ^[|]\s+${macaddr}\s+[|]\s+${vlan}\s+[|]\s+(\S+)\s+[|]\s+${oif}\s+[|]\s+${flags}.*$$ -> Record 
+ 
