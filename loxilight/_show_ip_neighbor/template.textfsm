@@ -8,8 +8,3 @@ Value remote (\w+)
 
 Start  
   ^[|]\s+${aaa}\s+[|]\s+${bbb}\s+[|]\s+${macAddr}\s+[|]\s+(\S+)\s+[|]\s+${remote}.*$$ -> Record  
-
-
-
-
-  | 1   | 128.0.0.1 | 01:42:b4:fc:af:a9   | 01:42:b4:fc:af:19       | eth1      |    aaa        |     bbb       |
