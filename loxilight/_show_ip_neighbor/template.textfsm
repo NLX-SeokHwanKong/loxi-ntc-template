@@ -5,5 +5,7 @@ Value state (\w+)
 Value remote (offload)
 
 Start  
+  ^[|].*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
   ^[|]\s+(\S+)\s+[|]\s+${ipAddress}\s+[|]\s+${macaddr}\s+[|]\s+([0-9a-f:]*)\s+[|]\s+${oif}.*$$ -> Record 
  
