@@ -5,5 +5,5 @@ Value state (\w+)
 Value remote (offload)
 
 Start  
-  ^[|]\s+(\S+)\s+[|]\s+${ipAddress}.$$} -> Record 
+  ^[|]\s+${oif}\s+[|]\s+${ipAddress}.$$} -> Record 
  
