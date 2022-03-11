@@ -1,7 +1,7 @@
 Value macaddr ([0-9a-f:]+)
 Value oif (\S+)
 Value vlan (\d+)
-Value flags ([A-Za-z ]*)
+Value flags (\w+)
 Value remoteVtepIp ([0-9.]+)
 
 Start
