@@ -7,4 +7,4 @@ Value state (\w+)
 Value remote (\w+)
 
 Start  
-  ^[|]\s+${aaa}\s+[|]\s+${ipAddress}\s+[|]\s+${macaddr}\s+[|]\s+${bbb}\s+[|]\s+${oif}\s+[|]\s+${state}\s+[|]\s+{remote}.*$$ -> Record  
+  ^[|]\s+${aaa}\s+[|]\s+{remote}.*$$ -> Record  
