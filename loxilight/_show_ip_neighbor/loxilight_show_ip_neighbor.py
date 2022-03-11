@@ -1,7 +1,6 @@
 import textfsm
 
 # cat /proc/uptime; hostnamectl
-# ^[|]\s+VRF\s+[|]\s+NEXT HOP\s+[|]\s+SOURCE MAC\s+[|]\s+DESTINAION MAC\s+[|]\s+INTERFACE\s+[|]\s+IS INSTALL\s+[|]\s+HW INSTALL.*$$ -> Next.NoRecord
 
 traceroute = '''
 | VRF | NEXT HOP | SOURCE MAC | DESTINAION MAC | INTERFACE | IS INSTALL | HW INSTALL |

@@ -1,0 +1,15 @@
+Value protocol (\w+)
+Value Required prefix ([0-9./]*|[0-9a-f:/]*|default)
+Value vrf (\S+)
+Value source ([0-9./]*)
+Value List nexthopIps ([0-9./]*|[0-9a-f:/]*)
+Value List oifs (\S+)
+Value List weights (\d+)
+Value metric (\d+)
+Value action (blackhole)
+
+Start  
+  ^[|]\s+HOST-IP.*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
+  ^[|]\s+${prefix}\s+[|]\s+(\S+)\s+[|]\s+${vrf}\s+[|]\s+${nexthopIps}\s+[|]\s+(\S+).*$$ -> Record 
+ 
