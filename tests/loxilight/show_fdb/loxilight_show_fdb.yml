@@ -1,0 +1,12 @@
+---
+parsed_sample:
+  - macaddr: "33:33:00:00:00:01"
+    oif: "eth0"
+    vlan: "100"
+    flags: "UP"
+    remotevtepip: ""
+  - macaddr: "44:44:00:00:00:01"
+    oif: "eth1"
+    vlan: "200"
+    flags: "UP"
+    remotevtepip: ""

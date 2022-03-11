@@ -1,0 +1,13 @@
+---
+parsed_sample:
+  - ipaddress: "'128.0.0.1"
+    macaddr: "01:42:b4:fc:af:a9"
+    oif: "eth1"
+    state: ""
+    remote: ""
+  - ipaddress: "'228.0.0.1"
+    macaddr: "02:42:b4:fc:af:a9"
+    oif: "eth2"
+    state: ""
+    remote: ""
+      

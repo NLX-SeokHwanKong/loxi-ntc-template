@@ -1,0 +1,4 @@
+| HOST-IP    | FLAGS | VRF | NEXTHOP   | IS INSTALL | HW INSTALL | INTERFACE |
+|------------|-------|-----|-----------|------------|------------|-----------|
+| 128.0.0.1  | flag  | def | 129.0.0.1 | aaa        |    aaa     | eth1      |
+| 228.0.0.1  | flag  | def | 229.0.0.1 | bbb        |    bbb     | eth2      |

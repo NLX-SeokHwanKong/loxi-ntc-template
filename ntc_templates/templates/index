@@ -17,8 +17,12 @@ linux_show_ip_route.textfsm, .*, linux, sh[[ow]] ip route
 linux_show_ip_addr.textfsm, .*, linux, sh[[ow]] ip addr
 linux_show_time.textfsm, .*, linux, sh[[ow]] time
 linux_show_vlan.textfsm, .*, linux, sh[[ow]] vlan
-linux_show_fdb.textfsm, .*, linux, sh[[ow]] fdb
 linux_show_sys.textfsm, .*, linux, sh[[ow]] sys
 linux_show_top.textfsm, .*, linux, sh[[ow]] top
 linux_arp_-a.textfsm, .*, linux, arp -a
 linux_show_fs.textfsm, .*, linux, sh[[ow]] fs
+
+loxilight_show_ip_neighbor, .*, loxilight, sh[[ow]] ip neighbor
+loxilight_show_ip_route, .*, loxilight, sh[[ow]] ip route
+loxilight_show_vlan, .*, loxilight, sh[[ow]] vlan
+loxilight_show_fdb, .*, loxilight, sh[[ow]] fdb

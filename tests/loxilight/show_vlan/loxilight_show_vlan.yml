@@ -1,0 +1,11 @@
+---
+parsed_sample:
+  - vlanname: "hsvlan110"
+    vlan: ["eth0,eth1"]
+    pvid: "110"
+    state: "UP"
+  - vlanname: "hsvlan120"
+    vlan: ["eth0,eth1"]
+    pvid: "120"
+    state: "UP"
+  
