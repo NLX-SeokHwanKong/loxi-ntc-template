@@ -1,10 +1,8 @@
-Value aaa (\w+)
-Value bbb ([0-9./]*|[0-9a-f:/]*)
-Value macAddr ([0-9a-f:]*)
-Value macaddr (\w+)
-Value oif (\s+)
+Value ipAddress ([0-9./]*|[0-9a-f:/]*)
+Value macaddr ([0-9a-f:]*)
+Value oif (\S+)
 Value state (\w+)
-Value remote (\w+)
+Value remote (offload)
 
 Start  
-  ^[|]\s+${aaa}\s+[|]\s+${bbb}\s+[|]\s+${macAddr}\s+[|]\s+(\S+)\s+[|]\s+${remote}.*$$ -> Record  
+  ^[|]\s+(\w+))\s+[|]\s+${ipAddress}\s+[|]\s+${macAddr}\s+[|]\s+(\S+)\s+[|]\s+${oif}.*$$ -> Record  
