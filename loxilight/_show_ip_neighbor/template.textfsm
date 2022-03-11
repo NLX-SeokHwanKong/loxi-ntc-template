@@ -7,4 +7,4 @@ Value state (\w+)
 Value remote (\w+)
 
 Start  
-  ^[|]\s+${aaa}\s+[|]\s+${bbb}\s+[|]\s+${macAddr}.*$$ -> Record  
+  ^[|]\s+${aaa}\s+[|]\s+${bbb}\s+[|]\s+${macAddr}\s+[|]\s+(\S+).*$$ -> Record  
