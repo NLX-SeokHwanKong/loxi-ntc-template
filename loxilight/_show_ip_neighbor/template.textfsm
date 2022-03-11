@@ -1,6 +1,6 @@
 Value aaa (\w+)
-Value bbb (\S+)
-Value macAddr (\S+)
+Value bbb ([0-9./]*|[0-9a-f:/]*)
+Value macAddr ([0-9a-f:]*)
 Value macaddr (\w+)
 Value oif (\s+)
 Value state (\w+)
@@ -8,3 +8,8 @@ Value remote (\w+)
 
 Start  
   ^[|]\s+${aaa}\s+[|]\s+${bbb}\s+[|]\s+${macAddr}\s+[|]\s+(\S+)\s+[|]\s+${remote}.*$$ -> Record  
+
+
+
+
+  | 1   | 128.0.0.1 | 01:42:b4:fc:af:a9   | 01:42:b4:fc:af:19       | eth1      |    aaa        |     bbb       |
