@@ -19,8 +19,8 @@ linux_show_time.textfsm, .*, linux, sh[[ow]] time
 linux_show_vlan.textfsm, .*, linux, sh[[ow]] vlan
 linux_show_sys.textfsm, .*, linux, sh[[ow]] sys
 linux_show_top.textfsm, .*, linux, sh[[ow]] top
-linux_arp_-a.textfsm, .*, linux, arp -a
 linux_show_fs.textfsm, .*, linux, sh[[ow]] fs
+linux_arp_-a.textfsm, .*, linux, arp -a
 
 loxilight_show_ip_neighbor.textfsm, .*, loxilight, sh[[ow]] ip neighbor
 loxilight_show_ip_route.textfsm, .*, loxilight, sh[[ow]] ip route
