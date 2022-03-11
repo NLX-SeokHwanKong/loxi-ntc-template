@@ -1,5 +1,5 @@
 Value aaa (\w+)
-Value bbb (\w+)
+Value bbb (\S+)
 Value ipAddress (\w+)
 Value macaddr (\w+)
 Value oif (\s+)
