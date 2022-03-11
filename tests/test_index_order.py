@@ -42,6 +42,7 @@ OS_CHOICES = [
     "juniper_junos",
     "juniper_screenos",
     "linux",
+    "loxilight"
     "ovs_linux",
     "paloalto_panos",
     "quanta_mesh",
