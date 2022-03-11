@@ -1,10 +1,10 @@
 Value aaa (\w+)
 Value bbb (\S+)
-Value ipAddress (\w+)
+Value ipAddress (\S+)
 Value macaddr (\w+)
 Value oif (\s+)
 Value state (\w+)
 Value remote (\w+)
 
 Start  
-  ^[|]\s+${aaa}\s+[|]\s+${bbb}.*$$ -> Record  
+  ^[|]\s+${aaa}\s+[|]\s+${bbb}\s+[|]\s+{ipAddress}.*$$ -> Record  
