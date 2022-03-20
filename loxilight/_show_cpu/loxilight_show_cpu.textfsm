@@ -1,0 +1,24 @@
+Value Filldown minLoadAvg (\S+)
+Value Filldown fiveMinLoadAvg (\S+)
+Value Filldown fifteenMinLoadAvg (\S+)
+Value Filldown totalMem (\d+)
+Value Filldown freeMem (\d+)
+Value Filldown usedMem (\d+)
+Value Filldown cacheMem (\d+)
+Value pid (\d+)
+Value user (\S+)
+Value priority (\d+)
+Value nice (\d+)
+Value virtualMem (\d+|\d+.\d+g)
+Value residentMem (\d+|\d+.\d+g)
+Value sharedMem (\d+|\d+.\d+g)
+Value state (\S)
+Value percentCPU (\d+.\d+)
+Value percentMem (\d+.\d+)
+Value runningTime (\d+:\d+.?\d*)
+Value procName (.*)
+
+Start  
+  ^[|]\s+PID.*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
+  ^[|]\s+${pid}\s+[|]\s+{user}\s+[|]\s+{priority}\s+[|]\s+{nice}\s+[|]\s+{virtualMem}\s+[|]\s+{residentMem}\s+[|]\s+{sharedMem}\s+[|]\s+{state}\s+[|]\s+{percentCPU}\s+[|]\s+{percentMem}\s+[|]\s+{runningTime}\s+[|]\s+{procName}\s+.*$$

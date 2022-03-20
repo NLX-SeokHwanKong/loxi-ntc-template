@@ -7,5 +7,5 @@ Value remoteVtepIp ([0-9.]+)
 Start
   ^[|]\s+MAC.*$$ -> Next.NoRecord
   ^[|]----.*$$ -> Next.NoRecord
-  ^[|]\s+${macaddr}\s+[|]\s+${vlan}\s+[|]\s+(\S+)\s+[|]\s+${oif}\s+[|]\s+${flags}.*$$ -> Record 
+  ^[|]\s+${macaddr}\s+[|]\s+${vlan}\s+[|]\s+(\S+)\s+[|]\s+${remoteVtepIp}\s+[|]\s+(\S+)\s+[|]\s+${flags}.*$$ -> Record 
  

@@ -1,0 +1,13 @@
+Value device ([/.\w]+)
+Value fstype (\w+)
+Value totalSize ([^ \t]+)
+Value usedSize ([^ \t]+)
+Value availSize ([^ \t]+)
+Value usedPercent (\S+)
+Value mountPoint ([^ ]*)
+
+Start
+  ^[|]\s+FILE.*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
+  ^[|]\s+${device}\s+[|]\s+${fstype}\s+[|]\s+${totalSize}\s+[|]\s+${usedSize}\s+[|]\s+${availSize}\s+[|]\s+${usedPercent}\s+[|]\s+${mountPoint}.*$$ -> Record 
+ 

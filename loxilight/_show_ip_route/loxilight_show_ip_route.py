@@ -3,10 +3,11 @@ import textfsm
 # cat /proc/uptime; hostnamectl
 
 traceroute = '''
-| HOST-IP    | FLAGS | VRF | NEXTHOP   | IS INSTALL | HW INSTALL | INTERFACE |
-|------------|-------|-----|-----------|------------|------------|-----------|
-| 128.0.0.1  | flag  | def | 129.0.0.1 | aaa        |    aaa     | eth1      |
-| 228.0.0.1  | flag  | def | 229.0.0.1 | bbb        |    bbb     | eth2      |
+ show ip route all
+| VRF  |        ROUTE        | IS INSTALL |     NEXTHOP      |     INTERFACE     |
+|------|---------------------|------------|------------------|-------------------|
+| 2000 |   192.168.10.102/32 | U          |   192.168.10.102 |              hs1  |
+| 2000 |      10.41.43.60/32 | I          |      10.233.64.2 |        hsvlan110  |
 '''
 
 

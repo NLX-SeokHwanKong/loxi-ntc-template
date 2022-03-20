@@ -1,0 +1,10 @@
+Value vendor (\S+)
+Value model (\S+)
+Value os (.*)
+Value sysUptime (\d+.\d+)
+Value architecture (\S+)
+
+Start
+  ^[|]\s+SYSTEM.*$$ -> Next.NoRecord
+  ^[|]----.*$$ -> Next.NoRecord
+  ^[|]\s+${sysUptime}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${model}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${os}\s+[|]\s+(\S+)\s+[|]\s+${architecture}.*$$ -> Record 

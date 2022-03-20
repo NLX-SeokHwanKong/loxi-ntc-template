@@ -9,7 +9,7 @@ Value metric (\d+)
 Value action (blackhole)
 
 Start  
-  ^[|]\s+HOST-IP.*$$ -> Next.NoRecord
+  ^[|]\s+VRF.*$$ -> Next.NoRecord
   ^[|]----.*$$ -> Next.NoRecord
-  ^[|]\s+${prefix}\s+[|]\s+(\S+)\s+[|]\s+${vrf}\s+[|]\s+${nexthopIps}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${oifs}.*$$ -> Record 
+  ^[|]\s+${vrf}\s+[|]\s+${prefix}\s+[|]\s+(\S+)\s+[|]\s+${nexthopIps}\s+[|]\s+${oifs}.*$$ -> Record 
  
