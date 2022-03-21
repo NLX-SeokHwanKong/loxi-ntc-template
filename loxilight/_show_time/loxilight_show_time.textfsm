@@ -5,4 +5,4 @@ Value ntpSync (\S+)
 Start  
   ^[|]\s+LOCAL TIME.*$$ -> Next.NoRecord
   ^[|]----.*$$ -> Next.NoRecord
-  ^[|]\s+(\S+ \S+ \S+ \S+)\s+[|]\s+(\S+ \S+ \S+ \S+)\s+[|]\s+(\S+ \S+ \S+)\s+[|]\s+${timezone}\s+[|]\s+${ntpSync}\s+[|]\s+${ntpEnabled}\s+[|]\s+(\S+).*$$
+  ^[|]\s+(\S+ \S+ \S+ \S+)\s+[|]\s+(\S+ \S+ \S+ \S+)\s+[|]\s+(\S+ \S+ \S+)\s+[|]\s+${timezone}\s+[|]\s+${ntpSync}\s+[|]\s+${ntpEnabled}\s+[|]\s+(\S+).*$$ -> Record
