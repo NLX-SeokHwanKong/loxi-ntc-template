@@ -21,4 +21,4 @@ Value procName (.*)
 Start  
   ^[|]\s+PID.*$$ -> Next.NoRecord
   ^[|]----.*$$ -> Next.NoRecord
-  ^[|]\s+${pid}\s+.*$$
+  ^[|]\s+${pid}\s+[|]\s+{user}\s+[|]\s+{priority}\s+[|]\s+{nice}\s+[|]\s+{virtualMem}\s+[|]\s+{residentMem}\s+[|]\s+{sharedMem}\s+[|]\s+{state}\s+[|]\s+{percentCPU}\s+[|]\s+{percentMem}\s+[|]\s+{runningTime}\s+[|]\s+{procName}\s+.*$$
