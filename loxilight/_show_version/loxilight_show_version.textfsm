@@ -7,4 +7,4 @@ Value architecture (\S+)
 Start
   ^[|]\s+SYSTEM.*$$ -> Next.NoRecord
   ^[|]----.*$$ -> Next.NoRecord
-  ^[|]\s+${sysUptime}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${model}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${os}\s+[|]\s+(\S+)\s+[|]\s+${architecture}.*$$ -> Record 
+  ^[|]\s+${sysUptime}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${model}\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+(\S+)\s+[|]\s+${os}[|]\s+(.*)(\S+)\s+[|]\s+${architecture}.*$$ -> Record 
