@@ -4,5 +4,7 @@ sysinfo = '''
 |     106642.18 |  1691164.93 | node1           | computer-vm | vm      | 63ef5212e8974bbea9d4b039e7621b96 | dff08dd413ec4f148f55b251b5824f01 | xn            | Ubuntu 20.04.3 LTS | Linux 5.11.0-38-generic | x86-64       |
 '''
 
-nodeinfo = sysinfo.split('\n')[2]
-print(nodeinfo)
+nodeinfo = sysinfo.split('\n')[3]
+nodeList = nodeinfo.split('|')
+
+print(nodeList)
