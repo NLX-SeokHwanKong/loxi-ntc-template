@@ -7,4 +7,8 @@ sysinfo = '''
 nodeinfo = sysinfo.split('\n')[3]
 nodeList = nodeinfo.split('|')
 
-print(nodeList)
+sys_uptime = float(nodeList[1])
+idle_uptime = float(nodeList[2])
+
+print(sys_uptime)
+print(idlet_uptime)
