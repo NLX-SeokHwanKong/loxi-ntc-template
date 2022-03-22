@@ -1,12 +1,13 @@
 import textfsm
 
-# cat /proc/uptime; hostnamectl
+# show vlan all
 
 traceroute = '''
-|   NAME    | VLAN | STATUS |    PORTS   |
-|-----------|------|--------|------------|
-| hsvlan110 |  110 | UP     | eth0,eth1 |
-| hsvlan120 |  120 | UP     | eth0,eth1 |
+|   NAME    | VLAN | STATUS |     PORTS     |
+|-----------|------|--------|---------------|
+| hsvlan110 |  110 | UP     |  hs3 2000(UP) |
+|           |      |        |  hs2 2000(UP) |
+|           |      |        |               |
 '''
 
 
